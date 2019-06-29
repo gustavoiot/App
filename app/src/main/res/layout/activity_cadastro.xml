@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".CadastroUsuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Digite seu usuário"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Digite sua senha"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Digite seu email"
+            android:maxLines="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtDataNasc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de nascimento:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/dataNasc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Data de nascimento"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexo:"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/icone"
+        android:layout_width="242dp"
+        android:layout_height="77dp">
+
+        <RadioButton
+            android:id="@+id/feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminino" />
+
+        <RadioButton
+            android:id="@+id/masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/outros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outros" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:onClick="cadastrarUsuario"
+        android:text="Salvar"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anterior" />
+
+    <TextView
+        android:id="@+id/textView_response"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:text="TextView" />
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="457dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="27dp"
+        android:text="Cadastro Local"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescricao"
+        android:layout_width="79dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:text="Descrição"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLongitude"
+        app:layout_constraintEnd_toStartOf="@+id/descricao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="16dp"
+        android:text="Longitude:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/latitude"
+        app:layout_constraintEnd_toStartOf="@+id/longitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricao" />
+
+    <TextView
+        android:id="@+id/txtLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="Latitude:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/latitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLongitude" />
+
+    <EditText
+        android:id="@+id/descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Digite o local"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/longitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtDescricao"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastro" />
+
+    <EditText
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:ems="10"
+        android:hint="Digite a longitude"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/latitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLongitude"
+        app:layout_constraintTop_toBottomOf="@+id/descricao" />
+
+    <EditText
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="295dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:ems="10"
+        android:hint="Digite a latitude"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLatitude"
+        app:layout_constraintTop_toBottomOf="@+id/longitude" />
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="210dp"
+        android:onClick="chamaCadastro"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latitude"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="210dp"
+        android:onClick="cadastrarLocal"
+        android:text="salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAnterior"
+        app:layout_constraintTop_toBottomOf="@+id/latitude"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginRight="222dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="83dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnterior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latitude" />
+
+</android.support.constraint.ConstraintLayout>

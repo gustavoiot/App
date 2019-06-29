@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPrincipalActivity">
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="chamarLogin"
+        android:text="Entrar"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="chamarCadastro"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toTopOf="@+id/btnManual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
+
+    <Button
+        android:id="@+id/btnManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="194dp"
+        android:text="Manual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastro" />
+</android.support.constraint.ConstraintLayout>

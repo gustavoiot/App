@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/btnAnterior2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="124dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="196dp"
+            android:onClick="chamaComodo"
+            android:text="Anterior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSalvar2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescricao2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnSalvar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="180dp"
+            android:onClick="cadastrarDispositivo"
+            android:text="Salvar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnAnterior2"
+            app:layout_constraintTop_toBottomOf="@+id/dispositivo"
+            app:layout_constraintVertical_bias="0.612" />
+
+        <EditText
+            android:id="@+id/dispositivo"
+            android:layout_width="191dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="37dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="103dp"
+            android:ems="10"
+            android:hint="Digite a descrição"
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtDescricao2"
+            app:layout_constraintTop_toBottomOf="@+id/txtAtuador2" />
+
+        <TextView
+            android:id="@+id/txtDescricao2"
+            android:layout_width="114dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="194dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="1dp"
+            android:text="Descrição:"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSalvar2"
+            app:layout_constraintEnd_toStartOf="@+id/dispositivo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dispositivo"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtAtuador2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="470dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginRight="159dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="17dp"
+            android:text="Cadastro Dispositivo"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textViewResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="137dp"
+            android:layout_marginEnd="263dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginRight="263dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="41dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/btnAnterior2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescricao2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtAtuador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="470dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="17dp"
+        android:text="Cadastro Dispositivo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_response"
+        android:layout_width="233dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="142dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comodo" />
+
+    <TextView
+        android:id="@+id/txtCadastroComodo"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:text="Cadastro Cômodo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtComodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="264dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="130dp"
+        android:text="Descrição:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnterior"
+        app:layout_constraintEnd_toStartOf="@+id/comodo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/comodo"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="108dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="86dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:hint="Digite o cômodo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView_response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtComodo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastroComodo" />
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:onClick="chamaCadastroLocal"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="242dp"
+        android:onClick="cadastrarComodo"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAnterior"
+        app:layout_constraintTop_toBottomOf="@+id/comodo"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

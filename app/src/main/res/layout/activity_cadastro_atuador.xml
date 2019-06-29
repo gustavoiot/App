@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spinDisp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAtuador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginBottom="470dp"
+        android:text="Cadastro Atuador"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtDescricao"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="13dp"
+        android:text="Descrição:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/atuador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atuador"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/atuador"
+        android:layout_width="222dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:hint="Digite a descrição"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/icone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtDescricao"
+        app:layout_constraintTop_toBottomOf="@+id/txtAtuador"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="58dp"
+        android:onClick="chamaCadastroDispositivo"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricao"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="58dp"
+        android:onClick="chamaCadastroAtuador"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAnterior"
+        app:layout_constraintTop_toBottomOf="@+id/atuador"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="316dp"
+        android:layout_marginRight="316dp"
+        android:text="Tipo:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atuador" />
+
+    <RadioGroup
+        android:id="@+id/icone"
+        android:layout_width="136dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/iconelampada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lâmpada" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sensor" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginRight="281dp"
+        android:layout_marginBottom="92dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnterior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icone" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+</android.support.constraint.ConstraintLayout>
